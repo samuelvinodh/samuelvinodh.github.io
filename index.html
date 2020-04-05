@@ -1,1 +1,92 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 19.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Welcome to Vinodh Justin Samuel's page!!</h2>
+
+<a target="_blank" href="https://www.linkedin.com/in/vinodh-justin-samuel/">
+  <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/linkedin.jpg" alt="LinkedIn" width="36" height="24" border="1">
+</a>
+
+<h4>Checkout my LinkedIn profile at <a target="_blank" href="https://www.linkedin.com/in/vinodh-justin-samuel/">Vinodh's LinkedIn</a></h4>
+
+<h5>I have worked on different programming languages like Java, Python, Scala, Javascript, Shell script. More to come...</h5>
+
+<h1>Microservices</h1>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/udemyGraphQL/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/graphql.png" alt="udemyGraphQL" width="600" height="400" border="2">
+    </a>
+    <div class="desc">GraphQL course completed at Udemy</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/Coursera/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/coursera.png" alt="courseraScala" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Scala functional programming principles Coursera</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<h1>Big Data</h1>
+
+<h5>To be updated...</h5>
+
+</body>
+</html>
