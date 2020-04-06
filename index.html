@@ -2,6 +2,11 @@
 <html>
 <head>
 <style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 div.gallery {
   border: 1px solid #ccc;
 }
@@ -12,12 +17,13 @@ div.gallery:hover {
 
 div.gallery img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 div.desc {
   padding: 15px;
   text-align: center;
+  font-size: 10px;
 }
 
 * {
@@ -48,28 +54,62 @@ div.desc {
   display: table;
   clear: both;
 }
+
+.bg-image {
+  /* The image used */
+  background-image: url("https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/background.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: relative;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 90%;
+  padding: 20px;
+
+}
 </style>
 </head>
 <body>
+<div class="bg-image"></div>
+<div class="bg-text">
 
 <h2>Welcome to Vinodh Justin Samuel's page!!</h2>
 
-<a target="_blank" href="https://www.linkedin.com/in/vinodh-justin-samuel/">
+<h5>Checkout my LinkedIn profile at <a target="_blank" href="https://www.linkedin.com/in/vinodh-justin-samuel/">Vinodh's LinkedIn</a> <a target="_blank" href="https://www.linkedin.com/in/vinodh-justin-samuel/">
   <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/linkedin.jpg" alt="LinkedIn" width="36" height="24" border="1">
-</a>
+</a></h5>
 
-<h4>Checkout my LinkedIn profile at <a target="_blank" href="https://www.linkedin.com/in/vinodh-justin-samuel/">Vinodh's LinkedIn</a></h4>
+<h5>I have worked on different programming languages like Java, Python, Scala, Javascript, Shell script for various organizations.</h5>
 
-<h5>I have worked on different programming languages like Java, Python, Scala, Javascript, Shell script. More to come...</h5>
+<h5>My Github Repositories are listed here below..</h5>
 
-<h1>Microservices</h1>
+<h3>Courses/Certifications:</h3>
 
 <div class="responsive">
   <div class="gallery">
     <a target="_blank" href="https://samuelvinodh.github.io/udemyGraphQL/">
       <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/graphql.png" alt="udemyGraphQL" width="600" height="400" border="2">
     </a>
-    <div class="desc">GraphQL course completed at Udemy</div>
+    <div class="desc">GraphQL + Spring Boot (Udemy)</div>
   </div>
 </div>
 
@@ -78,15 +118,193 @@ div.desc {
     <a target="_blank" href="https://samuelvinodh.github.io/Coursera/">
       <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/coursera.png" alt="courseraScala" width="600" height="400" border="2">
     </a>
-    <div class="desc">Scala functional programming principles Coursera</div>
+    <div class="desc">Functional Programming Principles (Coursera)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/udemyScala/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/scala.png" alt="udemyScala" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Scala Programming Basics ** (Udemy)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/udemy_python_ipynb/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/python.jpg" alt="udemy_python_ipynb" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Algorithms in Python ** (Udemy)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/udemyJava/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/udemy.png" alt="udemyJava" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Java Programming Courses (Udemy)</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+<h5/>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/udemySpring/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/spring.png" alt="udemySpring" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Java Spring Framework Courses (Udemy)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/udemyFSAngular/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/angularjs.png" alt="udemyFSAngular" width="600" height="400" border="2">
+    </a>
+    <div class="desc">AngularJS + Spring Boot ** (Udemy)</div>
   </div>
 </div>
 
 <div class="clearfix"></div>
 
-<h1>Big Data</h1>
+<h3>Spring Framework:</h3>
 
-<h5>To be updated...</h5>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/SpringBootAll/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/hystrix.jpg" alt="SpringBootAll" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Spring Boot + Cloud Technologies</div>
+  </div>
+</div>
 
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/HoverflySpring/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/hoverfly.jpg" alt="HoverflySpring" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Spring Boot + Hoverfly</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/SonarQubeApp/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/sonarqube.jpg" alt="SonarQubeApp" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Spring Boot + SonarQube</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/ConfigServer/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/spring.png" alt="ConfigServer" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Spring Boot + ConfigServer</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/DockerSpring/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/docker.png" alt="DockerSpring" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Spring Boot + Docker</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+<h5/>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/ConsulServiceDiscovery/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/spring.png" alt="ConsulServiceDiscovery" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Spring Boot + Consul Service Discovery</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/EurekaHystrix/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/eureka.png" alt="EurekaHystrix" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Spring Boot + Eureka</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/SpringSecurity/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/spring.png" alt="SpringSecurity" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Spring Boot + JWT API Security</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/SpringSelenium/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/selenium.jpg" alt="SpringSelenium" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Spring Boot + Selenium</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<h3>Big Data:</h3>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/BigDataApps/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/spark.png" alt="BigDataApps" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Scala + Spark Kafka MongoDB</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/jupyter_notebooks/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/jupyter.png" alt="jupyter_notebooks" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Python Notebooks [Spark/etc]</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<h3>Java:</h3>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/hackerrank/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/hackerrank.jpg" alt="hackerrank" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Java Hackerrank Solutions</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="https://samuelvinodh.github.io/java_apps/">
+      <img src="https://raw.githubusercontent.com/samuelvinodh/samuelvinodh.github.io/master/img/java.png" alt="java_apps" width="600" height="400" border="2">
+    </a>
+    <div class="desc">Java Basics Learning</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+<h5/>
+
+</div>
 </body>
 </html>
